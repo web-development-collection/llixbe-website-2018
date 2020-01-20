@@ -1,0 +1,168 @@
+/* ========== reset ========== */
+* { padding: 0; margin: 0; box-sizing: border-box; }
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* ========== doc-styling ========== */
+:root {
+    --text-color: red;
+    --text-bg-color: black;
+}
+
+.wrap {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    width: 100%;
+}
+/* .hidden {
+    display: none;
+} */
+
+
+/* ========== header ========== */
+/* ========== */
+header {
+    position: relative;
+}
+header .banner img {
+    width: 100%;
+}
+
+
+/* --- overlay --- */
+header .overlay {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+header .overlay img {
+    width: 100%;
+}
+header .overlay a, header .overlay {
+    color: red;
+    text-decoration: none;
+}
+header .left {
+    position: absolute;
+    bottom: 12px;
+}
+header .overlay .right {
+    position: absolute;
+    right: 20%;
+    bottom: 12px;
+}
+
+
+nav {
+    position: absolute;
+    bottom: 5px; 
+    left: 0; right: 0;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+
+    text-align: center;
+}
+
+nav .nav-item a {
+    display: block;
+    padding: 20px 0;
+
+    font-weight: 700;
+    
+    text-decoration: none;
+    font-style: italic;
+    text-transform: uppercase;
+
+    /* background-color: var(--text-bg-color); */
+    color: var(--text-color);
+}
+
+div.nav-item:hover a {
+    color: blue;
+}
+
+
+
+/* ========== shop ========== */
+/* ========== */
+section#shop {
+    position: relative;
+}
+
+section#shop .banner {
+    position: relative;
+}
+section#shop .banner .overlay {
+    font-family: 'Anonymous pro', monospace;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+    
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* stroke color */
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: lightgreen;
+    -webkit-text-stroke-width: 0.50px; 
+
+    font-size: 1000%;
+    text-transform: uppercase;
+}
+section#shop .banner .overlay:nth-child(2) {
+    top: 40%;
+}
+section#shop .banner .overlay:nth-child(3) {
+    top: 60%;
+}
+
+/* ========== */
+section#shop .hidden {
+    text-align: center;
+}
+
+section#shop .hidden img {
+    margin: 60px auto;
+    width: 30%;
+}
+
+
+
+
+
+
+/* ========== magazine ========== */
+/* ========== */
+section#magazine {
+    position: relative;
+}
+
+
+
+
+/* ========== footer ========== */
+/* ========== */
+footer {
+    position: relative;
+    text-align: center;
+    height: 60px;
+
+    color: var(--text-color);
+}
+footer .footer-list {
+    margin: 60px;
+}
+footer li {
+    position: relative;
+    padding: 0 15px;
+
+    display: inline-block;
+}
+
